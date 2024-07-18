@@ -1,30 +1,36 @@
+// src/components/Navigation.jsx
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-
-function NavTabs({ currentPage, handlePageChange }) {
-    return(
-        <ul className="nav nav-tabls">
-            <li className="nav-item">
-                <a href="#about"
-                    onClick={() => handlePageChange('About')}
-                    className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>About</a>
-            </li>
-            <li className="nav-item">
-                <a href="#portfolio"
-                    onClick={() => handlePageChange('Portfolio')}
-                    className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>Portfolio</a>
-            </li>
-            <li className="nav-item">
-                <a href="#contact"
-                    onClick={() => handlePageChange('Contact')}
-                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</a>
-            </li>
-            <li className="nav-item">
-                <a href="#resume"
-                    onClick={() => handlePageChange('Resume')}
-                    className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</a>
-            </li>
-        </ul>
-    );
+function Navigation  (props)  {
+  const tabs = ["About", "Portfolio", "Contact", "Resume"]
+  return (
+    <div className="tabs is-centered">
+      <ul className="nav nav-tabs">
+      {tabs.map((tab) => (
+          <li
+            className={
+              props.currentPage === tab ? "nav-item is-active" : "nav-item"
+            }
+            key={tab}
+          >
+            <a
+              href={"#" + tab.toLowerCase()}
+              // Whenever a tab is clicked on,
+              // the current page is set through the handlePageChange props.
+              onClick={() => props.handlePageChange(tab)}
+              className={
+                props.currentPage === tab ? "nav-link active" : "nav-link"
+              }
+            >
+              {tab}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
+  
 
-export default NavTabs;
+export default Navigation;

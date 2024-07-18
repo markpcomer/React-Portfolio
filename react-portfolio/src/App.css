@@ -1,4 +1,437 @@
-#root {
+body {
+  font-family: Work Sans;
+  text-align: center;
+  background-color: aliceblue;
+
+}
+
+.navbar, .navbar-brand {
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: aliceblue;
+  
+}
+
+div.navbar-brand {
+  padding-top: 2em;
+  margin-bottom: 2em;
+  
+}
+
+.navbar .navbar-brand > .navbar-item,
+.navbar .navbar-brand .navbar-link {
+  display: inline-block;
+}
+
+main {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 30em;
+  margin-right: 30em;
+}
+
+.my-pic {
+	clip-path: circle();
+  width: 250px;
+}
+
+.label {
+  text-align: left;
+}
+
+footer.footer {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    main {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+}
+
+
+/* src/app.css */
+
+/* body {
+  font-family: Work Sans;
+  text-align: center;
+  background-color: aliceblue;
+
+}
+
+.projectimage {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+}
+
+.projectContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contactContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+} */
+
+/* .contactForm{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+  margin-top: 15px;
+
+}
+.contactForm label{
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  width: 250px;
+} */
+
+
+ /* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}  */
+
+ /* changed font-family  */
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+} 
+
+
+header {
+  padding: 1rem;
+  background-image: url();
+  background-color: rgb(171, 207, 171);
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+} 
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs {
+  align-items: stretch;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.name-avatar {
+  display: flex;
+  align-items: center;
+}
+
+/* used border-radius for the avatar  */
+/* .avatar {
+  clip-path: circle();
+    width: 250px;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+} */
+
+
+
+  /*width: 250px;
+  height: 250px;
+  border-radius: 65%;
+  margin-right: 2rem;
+ 
+}*/
+/* .navbar .navbar-brand>.navbar-item {
+  display: inline-block;
+}
+
+.navbar-link, a.navbar-item {
+  cursor: pointer;
+}
+.navbar-link:hover, a.navbar-item:hover {
+  color: black;
+  }
+
+  
+  
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+.aboutContainer{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+}
+
+.aboutContainer p{
+  width: 750px;
+}
+
+.portfolioContainer{
+  display: left;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolioContainer h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} */
+/* section {
+  margin-bottom: 3rem;
+  display: flex;
+} */
+
+
+
+
+/* section h2 {
+  width: 25%;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  width: 10px;
+  height: 100%;
+  margin-right: 10px;
+  background-color: red;
+} */
+
+/* .content {
+  width: 75%;
+  padding-left: 1rem;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.large-box {
+  width: 100%;
+  height: 400px;
+ background-image: url('blank');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+/
+
+/* add projects images */
+/* #project-A, #project-B, #project-C, #project-D, #project-E {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+} */
+
+/* Background images for each project */
+/* #project-A {
+  background-image: url(./assets/image/WorkoutTracker2.png);
+}
+#project-B {
+  background-image: url(./assets/image/12-sql-homework-video-thumbnail.png);
+}
+#project-C {
+  background-image: url(./assets/image/Screenshot\ 2024-03-03\ at\ 7.00.26\ PM.png);
+}
+#project-D {
+  background-image: url(./assets/image/13-orm-homework-demo-01.gif);
+}
+#project-E {
+  background-image: url(./assets/image/Screenshot\ 2024-06-05\ at\ 12.12.07\ PM.png);
+} */
+
+/* .link-box-large {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.link-box-small {
+  flex-basis: calc(50% - .5rem);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  border-width: 10px;
+}
+
+.border-box {
+  border-color: lightblue;
+  border-style: solid;
+  border-width: 10px;
+} */
+
+/* add a link to my github */
+/* .project1-box {
+  flex-basis: calc(100%);
+  height: 250px;
+  background-image: url('git@github.com:nybrasil/HW1.git');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.project2-box {
+  flex-basis: calc(100%);
+  height: 250px;
+  background-image: url('blank');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.project3-box {
+  flex-basis: calc(100%);
+  height: 250px;
+  background-image: url('blank');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+} */
+
+/* .project4-box {
+  flex-basis: calc(100%);
+  height: 250px;
+  background-image: url('blank');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.project1-box, .project2-box, .project3-box, .project4-box {
+  flex-basis: calc(100%);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.description-box {
+  flex-basis: calc(20%);
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 250, 54);
+  margin-right: 85%;
+  margin-bottom: 5%;
+  font-size: 25px;
+  font-weight: bold;
+} */
+
+/* .small-description-box {
+  flex-basis: calc(20%);
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 250, 54);
+  margin-right: 80%;
+  margin-top: 20%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.contact-info li {
+  margin-bottom: 0.5rem;
+}
+
+.work-container a {
+  color: black;
+  text-decoration: none;
+} */
+
+/* .work-container a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-container {
+  background-color: rgb(171, 207, 171);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+
+  color: white
+}
+
+.footer-container a {
+  color: white;
+  margin: 20px;
+} */
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +472,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
