@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from '../utils/helpers'; // Importing email validation function
 
 const Contact = () => {
+  // State management using useState hook
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState(''); // State to manage error message
 
+  // Function to handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormState({ ...formState, [name]: value });
@@ -15,10 +17,11 @@ const Contact = () => {
     }
   };
 
-  const handleSubmit = (e) => {l
+  // Function to handle form submission
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate email
+    // Validate email using helper function
     const isValidEmail = validateEmail(formState.email);
     if (!isValidEmail) {
       setErrorMessage('Please enter a valid email.');
@@ -32,7 +35,7 @@ const Contact = () => {
     setFormState({ name: '', email: '', message: '' });
   };
 
-  // Define styles object
+  // Styling for the component using inline styles
   const styles = {
     container: {
       display: 'flex',
@@ -87,31 +90,15 @@ const Contact = () => {
       cursor: 'pointer',
       marginRight: '10px',
     },
-
-    // footer: {
-    //   marginTop: '30px',
-    //   textAlign: 'center',
-    // },
-    // icons: {
-    //   listStyleType: 'none',
-    //   padding: 0,
-    // },
-    // iconItem: {
-    //   display: 'inline',
-    //   margin: '0 10px',
-    // },
-    // icon: {
-    //   fontSize: '1.5rem',
-    //   color: '#333', // Adjust color as needed
-    // },
   };
 
   return (
     <div style={styles.container}>
-
       <main>
+        {/* Form with submission handler */}
         <form onSubmit={handleSubmit} style={styles.form}>
           <div style={styles.fields}>
+            {/* Input field for Name */}
             <label htmlFor="name" style={styles.label}>Name</label>
             <input
               type="text"
@@ -124,6 +111,7 @@ const Contact = () => {
             />
           </div>
           <div style={styles.fields}>
+            {/* Input field for Email */}
             <label htmlFor="email" style={styles.label}>Email</label>
             <input
               type="email"
@@ -134,9 +122,11 @@ const Contact = () => {
               style={styles.input}
               required
             />
+            {/* Display error message if email is invalid */}
             {errorMessage && <span style={styles.errorMessage}>{errorMessage}</span>}
           </div>
           <div style={styles.fields}>
+            {/* Textarea field for Message */}
             <label htmlFor="message" style={styles.label}>Message</label>
             <textarea
               id="message"
@@ -149,24 +139,13 @@ const Contact = () => {
             ></textarea>
           </div>
           <div style={styles.actions}>
+            {/* Submit button */}
             <button type="submit" style={{ ...styles.button }}>Send Message</button>
           </div>
         </form>
       </main>
-
-      {/* <footer style={styles.footer}>
-        <ul className="icons" style={styles.icons}>
-          <li style={styles.iconItem}><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter" style={styles.icon}></i></a></li>
-          <li style={styles.iconItem}><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f" style={styles.icon}></i></a></li>
-          <li style={styles.iconItem}><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram" style={styles.icon}></i></a></li>
-          <li style={styles.iconItem}><a href="https://github.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-github" style={styles.icon}></i></a></li>
-          <li style={styles.iconItem}><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin" style={styles.icon}></i></a></li>
-        </ul>
-      </footer> */}
     </div>
   );
 };
 
 export default Contact;
-
-
