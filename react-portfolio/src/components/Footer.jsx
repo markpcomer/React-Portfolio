@@ -1,78 +1,138 @@
-// src/components/Footer.jsx
 import React from 'react';
+import { FaLinkedin, FaFacebookF } from 'react-icons/fa';
+import { VscGithubAlt } from 'react-icons/vsc';
+import { AiOutlineLinkedin } from 'react-icons/ai';
+
+const styles = {
+  footerStyle: {
+    backgroundColor: '#333',
+    color: 'white',
+    textAlign: 'center',
+    padding: '20px',
+    marginTop: '30px',
+  },
+  linkStyle: {
+    color: 'white',
+    textDecoration: 'none',
+    marginLeft: '5px',
+  },
+  iconStyle: {
+    fontSize: '1.5rem',
+    verticalAlign: 'middle',
+  },
+};
 
 function Footer() {
   return (
-    <footer className='footer'>
-      <div className='content has-text-center'>
-        <p>
-          <strong>My Portfolio</strong> a React sit by{" "}
-          <a href="https://github.com/markpcomer" target='_blank' rel='noreferrer'>
-            Mark Comer
-          </a>
-          .
-          <hr />
-          <a href="https://www.linkedin.com/in/markpcomer/"
-              target='_blank' rel='noreferrer'
+    <footer style={styles.footerStyle}>
+      <h2 style={{ fontSize: '24px', marginBottom: '10px' }}>Made by Mark Comer</h2>
+      <ul style={{ listStyleType: 'none', padding: 0 }}>
+        <li style={{ display: 'inline-block', margin: '0 10px' }}>
+          <a
+            href="https://github.com/markpcomer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="logo"
+            style={{ ...styles.linkStyle }}
           >
-            LinkedIn
-          </a>{" "}
-          |{" "}{" "}
-
-        </p>
-      </div>
+            <VscGithubAlt style={{ ...styles.iconStyle }} />
+          </a>
+        </li>
+        <li style={{ display: 'inline-block', margin: '0 10px' }}>
+          <a
+            href="https://www.linkedin.com/in/markpcomer/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="logo"
+            style={{ ...styles.linkStyle }}
+          >
+            <AiOutlineLinkedin style={{ ...styles.iconStyle }} />
+          </a>
+        </li>
+        <li style={{ display: 'inline-block', margin: '0 10px' }}>
+          <a
+            href="https://www.facebook.com/mark.comer.330"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="logo"
+            style={{ ...styles.linkStyle }}
+          >
+            <FaFacebookF style={{ ...styles.iconStyle }} />
+          </a>
+        </li>
+      </ul>
     </footer>
-  )
+  );
 }
 
 export default Footer;
 
 
-// const Footer = () => {
-//   return (
-//     <footer>
-//        <section className="footer-container">
-      
-//       <a href="https://github.com/markpcomer" target="_blank" rel="noopener noreferrer">GitHub</a>
-      
-//       <a href="https://www.linkedin.com/in/markpcomer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 
-      
-//       </section>
-//     </footer>
-    
 
-//   );
+// import React from 'react';
+// import { FaLinkedin, FaFacebookF } from 'react-icons/fa';
+// import { VscGithubAlt } from 'react-icons/vsc';
+// import { AiOutlineLinkedin } from 'react-icons/ai';
+
+// const styles = {
+//   footerStyle: {
+//     backgroundColor: '#333',
+//     color: 'white',
+//     textAlign: 'center',
+//     padding: '20px',
+//     marginTop: '30px',
+//   },
+//   linkStyle: {
+//     color: 'white',
+//     textDecoration: 'none',
+//     marginLeft: '5px',
+//   },
+//   iconStyle: {
+//     fontSize: '1.5rem',
+//     verticalAlign: 'middle',
+//   },
 // };
 
-// export default Footer;
-
-
-// import React from "react";
-
 // function Footer() {
 //   return (
-//     <footer className="footer">
-//       <div className="content has-text-centered">
-//         <p>
-//           <strong>My Full Stack Development Portfolio</strong> - a React site by{" "}
-//           <a href="https://github.com/EmilyNecciai" target="_blank" rel="noreferrer">
-//             Emily Necciai Mayeski
-//           </a>
-//           .
-//           <hr />
+//     <footer style={styles.footerStyle}>
+//       <h2>Made by Mark Comer</h2>
+//       <ul style={{ listStyleType: 'none', padding: 0 }}>
+//         <li style={{ display: 'inline-block', margin: '0 10px' }}>
 //           <a
-//             href="https://www.linkedin.com/in/emilynecciai/"
-//             target="_blank" rel="noreferrer"
+//             href="https://github.com/markpcomer"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="logo"
+//             style={styles.linkStyle}
 //           >
-//             LinkedIn
-//           </a>{" "}
-//           |{" "}{" "}
-//           <a href="https://www.ithnk.org/" target="_blank" rel="noreferrer">
-//             Technical Writing Professional Site
+//             <VscGithubAlt style={styles.iconStyle} />
 //           </a>
-//         </p>
-//       </div>
+//         </li>
+//         <li style={{ display: 'inline-block', margin: '0 10px' }}>
+//           <a
+//             href="https://www.linkedin.com/in/markpcomer/"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="logo"
+//             style={styles.linkStyle}
+//           >
+//             <AiOutlineLinkedin style={styles.iconStyle} />
+//           </a>
+//         </li>
+//         <li style={{ display: 'inline-block', margin: '0 10px' }}>
+//           <a
+//             href="https://www.facebook.com/mark.comer.330"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="logo"
+//             style={styles.linkStyle}
+//           >
+//             <FaFacebookF style={styles.iconStyle} />
+//           </a>
+//         </li>
+//       </ul>
 //     </footer>
 //   );
 // }
@@ -80,31 +140,55 @@ export default Footer;
 // export default Footer;
 
 
-// import React from "react";
+// // import React from 'react';
+// // import { VscGithubAlt } from "react-icons/vsc";
+// // import { AiOutlineLinkedin } from "react-icons/ai";
+// // import { FaFacebookF } from "react-icons/fa";
 
-// function Footer() {
-//     return (
-//         <footer>
-//             <h2>Made by Mark Comer</h2>
-//             <ul>
-//                 <a href="https://github.com/markpcomer">
-//                     <li className="logo">
-//                         {/* Insert logo here */}
-//                     </li>
-//                 </a>
-//                 <a href="https://www.linkedin.com/in/markpcomer/">
-//                     <li className="logo">
-//                         {/* Insert logo here */}
-//                     </li>
-//                 </a>
-//                 <a href="https://www.instagram.com/">
-//                     <li className="logo">
-//                         {/* Insert logo here */}
-//                     </li>
-//                 </a>
-//             </ul>
-//         </footer>
-//     )
-// }
+// // const styles = {
+// //   footerStyle: {
+// //     backgroundColor: '#333',
+// //     color: 'white',
+// //     textAlign: 'center',
+// //     padding: '20px',
+// //     marginTop: '30px',
+// //   },
+// //   linkStyle: {
+// //     color: 'white',
+// //     textDecoration: 'none',
+// //     marginLeft: '5px',
+// //   },
+// //   iconStyle: {
+// //     fontSize: '1.5rem',
+// //     verticalAlign: 'middle',
+// //   },
+// // };
 
-// export default Footer;
+// // function Footer() {
+// //   return (
+// //     <footer>
+// //       <h2>Made by Mark Comer</h2>
+// //       <p>
+// //         <ul>
+// //           <a href="https://github.com/markpcomer">
+// //             <li className="logo">
+// //               <VscGithubAlt />
+// //             </li>
+// //           </a>
+// //           <a href="https://www.linkedin.com/in/markpcomer/">
+// //             <li className="logo">
+// //               <AiOutlineLinkedin />
+// //             </li>
+// //           </a>
+// //           <a href="https://www.facebook.com/mark.comer.330">
+// //             <li className="logo">
+// //               <FaFacebookF />
+// //             </li>
+// //           </a>
+// //         </ul>
+// //       </p>
+// //     </footer>
+// //   );
+// // }
+
+// // export default Footer;

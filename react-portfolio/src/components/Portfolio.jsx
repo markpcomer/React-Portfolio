@@ -7,7 +7,7 @@ const projects = [
     id: 0,
     title: "Currency Converter",
     tech: "JavaScript, HTML, CSS",
-    image: "../assets/currency-converter.png",
+    image: "../src/assets/currency-converter.png",
     description: "Allows user to convert all available currencies, and the switch the values for comparison.",
     repo: "https://github.com/markpcomer/Currency-Converter",
     live: "https://markpcomer.github.io/Currency-Converter/",
@@ -16,7 +16,7 @@ const projects = [
     id: 1,
     title: "Employee Tracker",
     tech: "MySQL, JavaScript, Inquirer.js, Node.js",
-    image: "../assets/employee-tracker.png",
+    image: "../src/assets/employee-tracker.png",
     description: "Allows you to view and edit department, role, & employee databases.",
     repo: "https://github.com/markpcomer/sql-employee-tracker-cms",
     live: "Download from github, input schema & seed files into Dbeaver, and enter node.index.js in the terminal.",
@@ -25,18 +25,36 @@ const projects = [
     id: 2,
     title: "Notetaker App",
     tech: "JavaScript, UUID, Node.js, CSS",
-    image: "../assets/note-taker-app.png",
+    image: "../src/assets/note-taker-app.png",
     description: "Write extensive notes and keep track of tasks, then save them for later reading or deletion.",
-    repo: "hhttps://github.com/markpcomer/express.js-note-taker",
-    live: "http://localhost:3001/notes",
+    repo: "https://github.com/markpcomer/express.js-note-taker",
+    live: "",
   },
   {
     id: 3,
     title: "Password Generator",
     tech: "JavaScript, HTML, CSS",
-    image: "../assets/password-generator.png",
+    image: "../src/assets/password-generator.png",
     description: "After answering prompts, this app will generate a random password for the user.",
     repo: "https://github.com/markpcomer/password-generator",
+    live: ""
+  },
+  {
+    id: 4,
+    title: "007 Quiz Game",
+    tech: "JavaScript, HTML, CSS",
+    image: "../src/assets/quiz-game.png",
+    description: "After answering questions, the user may input their initials, and have their score stored.",
+    repo: "https://github.com/markpcomer/password-generator",
+    live: ""
+  },
+  {
+    id: 5,
+    title: "Five Day Weather Dashboard",
+    tech: "JavaScript, HTML, CSS",
+    image: "../src/assets/weather-dashboard.png",
+    description: "After inputting their city, the user will receive the current day's weather, as well as the next five days' forecast .",
+    repo: "https://github.com/markpcomer/weather-dashboard",
     live: ""
   },
 ];
@@ -51,61 +69,6 @@ function Portfolio() {
     </div>
   )
 }
-
-
-// const projects = [
-//   {
-//     title: 'Workout Tracker',
-//     // image: WorkoutTrackerimg,
-//     deployedUrl: 'https://paulrusz.github.io/Group-Project1/',
-//     repoUrl: 'https://github.com/emsim11/Group-Project2'
-//   },
-//   {
-//     title: 'Sql',
-//     // image: Image1,
-//     deployedUrl: '',
-//     repoUrl: "https://github.com/nybrasil/HW12--SQL-Employee-Tracker"
-//     },
-//     {
-//       title: 'E-Commerce Back-End',
-//       // image: Image2,
-//       deployedUrl: "",
-//       repoUrl: "https://github.com/nybrasil/HW13-E-Commerce-Back-End"
-//       },
-
-//       {
-//         title: 'Work Day Schedule',
-//         // image: Image3,
-//         deployedUrl: "https://nybrasil.github.io/HW5/",
-//         repoUrl: "https://github.com/nybrasil/HW5"
-//         },
-//         {
-//           title: 'Tech-Blog',
-//           // image: Image4,
-//           deployedUrl: "https://hw14-tech-blog-4.onrender.com",
-//           repoUrl: "https://github.com/nybrasil/HW14-Tech-Blog"
-//           },
-// ];
-
-// const Portfolio = () => {
-//   return (
-//     <section className='portfolioContainer'>
-//       <h2>Portfolio</h2>
-//     <div className='projectContainer'>
-
-//       {projects.map((project, index) => (
-//         <Project 
-//           key={index} 
-//           title={project.title} 
-//           image={project.image} 
-//           deployedUrl={project.deployedUrl} 
-//           repoUrl={project.repoUrl} 
-//         />
-//       ))}
-//       </div>
-//     </section>
-//   );
-// };
 
 export default Portfolio;
 

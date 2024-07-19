@@ -1,3 +1,87 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* header h1 {
+  margin: 0;
+  font-size: 32px;
+} */
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-tabs a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.nav-tabs a:hover {
+  background-color: #ccc;
+}
+
+.nav-tabs .active {
+  background-color: rgb(157, 157, 241);
+  color: #fff;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.section {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+
+
+/* body {
+  font-family: Work Sans;
+  text-align: center;
+  background-color: aliceblue;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(74, 74, 74);
+} */
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
