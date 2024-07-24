@@ -55,7 +55,7 @@ const AboutMe = () => {
       {/* Horizontal rule with styles applied */}
       <hr style={styles.hr} />
       {/* Avatar image with styles applied */}
-      <img src="/src/assets/profile_pic.png" alt="avatar" style={styles.avatar} />
+      <img src="/assets/profile_pic.png" alt="avatar" style={styles.avatar} />
       {/* Italic text paragraph with styles applied */}
       <p style={styles.italicText}>
         I'm Mark, a recent Full-Stack Web Development graduate looking to begin a journey of 

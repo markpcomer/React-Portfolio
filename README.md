@@ -6,7 +6,7 @@
 This project represents a professional portfolio constructed with React. The main goal was to exhibit my projects and skills to prospective employers and collaborators effectively. By leveraging React, my intention was to highlight my expertise in contemporary web development technologies, distinguishing myself from developers who use traditional portfolios without React. This initiative addresses the challenge of presenting my work and experience in a compelling and interactive format. Throughout this endeavor, I gained valuable experience in developing dynamic single-page applications with React, including implementing routing and managing component states.
 
 ## Live site
-[![Netlify Status](https://api.netlify.com/api/v1/badges/24a247ab-8ab1-40c0-8994-d6bb69823fa7/deploy-status)](https://app.netlify.com/sites/markpcomer/deploys)
+[View the live site!](https://markpcomer.netlify.app/)
 
 ## Installation
 
